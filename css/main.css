@@ -60,6 +60,7 @@ body{
     font-family: "Karla", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    overflow: auto;
 }
 
 img{
@@ -67,10 +68,18 @@ img{
 }
 
 .container{
-    width: 1150px;
+    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+@media only screen {
+    .container{
+        margin: 0 auto;
+    }
+}
+
 
 .site__header{
     position: relative;
@@ -100,7 +109,7 @@ img{
 }
 
 .nav__item:nth-child(1){
-   margin-left: 485px;
+   margin-left: 490px;
 }
 
 .nav__link{
@@ -141,6 +150,27 @@ img{
     border: 1.5px solid #2C2830;
     background: #2C2830;
     color: #FFF;
+}
+
+.menu{
+    display: none;
+    border: 0;
+    background-color:transparent;
+    margin-left: auto;
+}
+
+@media only screen and (max-width:576px) {
+    .nav{
+        display: none;
+    }
+
+    .header__link{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
 }
 
 .site__main{
@@ -251,6 +281,9 @@ img{
     bottom: -155px;
 }
 
+@media only screen and (max-width:576px) {
+    .he
+}
 /* HERO SECTION ENDED */
 
 
@@ -336,6 +369,46 @@ img{
     line-height: 26px;
 }
 
+@media only screen and (max-width:576px) {
+    .different{
+        padding: 140px 0;
+    }
+
+    .different__inner::before{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .different__title{
+       text-align: center;
+        font-size: 48px;
+        margin-bottom: 80px;
+
+    }
+
+    .different__list{
+        padding-left: 24px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .different__item{
+        width: 100%;
+        max-width: 528px;
+        margin: 0 auto; 
+        margin-bottom: 56px;
+    }
+
+    .different__item:nth-child(3){
+        margin-bottom: 0;
+    }
+
+    .different__text-wrapper{
+        margin: 0 auto;
+    }
+}
+
 /* DIFFERENT SECTION ENDED */
 
 /* ARTICLE SECTION STARTED */
@@ -377,7 +450,7 @@ img{
 }
 
 .article__link{
-    display: inline-block;
+    display: block;
     border: 1.5px solid #FFF;
     width: 160px;
     height: 40px;
@@ -389,6 +462,33 @@ img{
     letter-spacing: 1.5px;
     text-decoration: none;
 }
+
+@media only screen and (max-width:576px) {
+    .article{
+        padding-bottom: 140px ;
+    }
+
+    .article__inner{
+        width: 100%;
+        padding: 72px 24px;
+        display: block;
+
+    }
+    .article__title{
+        margin-bottom: 40px;
+        max-width: 526px;
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .article__link{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
 /* ARTICLE SECTION ENDED */
 
 /* FOOTER STARTED */
@@ -467,6 +567,39 @@ img{
     color: #2D2641;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+}
+
+@media only screen and (max-width:576px) {
+    .site__footer{
+        padding: 88px 0;
+    }
+
+    .footer__inner{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .footer__img{
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .footer__bottom{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    
+    .company__link{
+        margin-bottom: 16px;
+    }
+    .footer__strong{
+        margin-top: 40px;
+        margin-bottom: 36px;
+    }
 }
 
 
